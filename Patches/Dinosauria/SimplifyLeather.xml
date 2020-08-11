@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Dinosauria</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[
+						defName="TyrannosaurusRex" or
+						defName="Yutyrannus" or
+						defName="Carnotaurus" or
+						defName="Allosaurus" or
+						defName="Spinosaurus" or
+						defName="Baryonyx" or
+						defName="Ankylosaurus" or
+						defName="Minmi" or
+						defName="Brachiosaurus" or
+						defName="Brontosaurus" or
+						defName="Diplodocus" or
+						defName="Magyarosaurus" or
+						defName="Utahraptor" or
+						defName="Dakotaraptor" or
+						defName="Dilophosaurus" or
+						defName="Velociraptor" or
+						defName="Compsognathus" or
+						defName="Gallimimus" or
+						defName="Gigantoraptor" or
+						defName="Iguanodon" or
+						defName="Parasaur" or
+						defName="Corythosaurus" or
+						defName="Deinocheirus" or
+						defName="Therizinosaurus" or
+						defName="Pachycephalosaurus" or
+						defName="Stygimoloch" or
+						defName="Dryosaurus" or
+						defName="Stegosaurus" or
+						defName="Triceratops" or
+						defName="Protoceratops" or
+						defName="Quetzalcoatlus" or
+						defName="Pteranodon"]/race/leatherDef</xpath>
+					<value>
+						<leatherDef>Leather_Lizard</leatherDef>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>		
