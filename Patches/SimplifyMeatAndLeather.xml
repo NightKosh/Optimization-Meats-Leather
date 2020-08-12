@@ -62,6 +62,14 @@
 					<meatLabel>raw meat</meatLabel>
 				</value>
 			</li>
+
+			<!-- Replace meat icon -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName="ButcherCorpseFlesh"]/uiIconThing</xpath>
+				<value>
+					<uiIconThing>Meat_Cow</uiIconThing>
+				</value>
+			</li>
 			
 			<li Class="PatchOperationAdd">
 				<xpath>Defs</xpath>
