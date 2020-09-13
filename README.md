@@ -1,4 +1,4 @@
-# Optimization: Meats & Leather
+# [Optimization: Meats & Leather](https://steamcommunity.com/sharedfiles/filedetails/?id=2227806226)
 
 This is a modified and improved version of [Owlchemist's](https://steamcommunity.com/id/owlchemist) "[Optimization: Meats](https://steamcommunity.com/sharedfiles/filedetails/?id=1721970101)" mod, and based on its sources.
 
