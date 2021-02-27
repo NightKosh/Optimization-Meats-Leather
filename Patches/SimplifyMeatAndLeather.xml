@@ -30,47 +30,6 @@
 				</value>
 			</li>
 
-			<!-- Replace alien meat by human meat(by changing of useMeatFrom) for every Alien Race. -->
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/AlienRace.ThingDef_AlienRace/race[contains(thinkTreeMain, "Humanlike")]/useMeatFrom</xpath>
-				<value>
-					<useMeatFrom>Human</useMeatFrom>
-				</value>
-			</li>
-			<!-- Replace alien meat by human meat(by addition of useMeatFrom change) for every Alien Race. -->
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/AlienRace.ThingDef_AlienRace/race[
-					contains(thinkTreeMain, "Humanlike") and not(useMeatFrom)
-					]</xpath>
-				<value>
-					<useMeatFrom>Human</useMeatFrom>
-				</value>
-			</li>
-			<!-- Replace Harpy meat by human meat(by addition of useMeatFrom change) -->
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/AlienRace.ThingDef_AlienRace/race[
-					contains(thinkTreeMain, "Harpylike") and not(useMeatFrom)
-					]</xpath>
-				<value>
-					<useMeatFrom>Human</useMeatFrom>
-				</value>
-			</li>
-
-			<!-- Replace alien leather bu human leather(by changing of leatherDef) for every Alien Race. -->
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/AlienRace.ThingDef_AlienRace/race[contains(thinkTreeMain, "Humanlike")]/leatherDef</xpath>
-				<value>
-					<leatherDef>Leather_Human</leatherDef>
-				</value>
-			</li>
-			<!-- Replace Harpy leather bu human leather(by changing of leatherDef). -->
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/AlienRace.ThingDef_AlienRace/race[contains(thinkTreeMain, "Harpylike")]/leatherDef</xpath>
-				<value>
-					<leatherDef>Leather_Human</leatherDef>
-				</value>
-			</li>
-			
 			<!-- Relabel cow meat to make it more generic -->
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="Cow"]/race/meatLabel</xpath>

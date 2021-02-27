@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<!-- Replace alien meat by human meat(by changing of useMeatFrom) for every Alien Race. -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/AlienRace.ThingDef_AlienRace/race[
+					contains(thinkTreeMain, "Humanlike") or
+					contains(thinkTreeMain, "AndroidLike")]/useMeatFrom</xpath>
+				<value>
+					<useMeatFrom>Human</useMeatFrom>
+				</value>
+			</li>
+
+			<!-- Replace alien meat by human meat(by addition of useMeatFrom change) for every Alien Race. -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/AlienRace.ThingDef_AlienRace/race[
+					(contains(thinkTreeMain, "Humanlike") or
+					contains(thinkTreeMain, "AndroidLike"))
+					and not(useMeatFrom)
+					]</xpath>
+				<value>
+					<useMeatFrom>Human</useMeatFrom>
+				</value>
+			</li>
+
+			<!-- Replace Harpy meat by human meat(by addition of useMeatFrom change) -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/AlienRace.ThingDef_AlienRace/race[
+					contains(thinkTreeMain, "Harpylike") and not(useMeatFrom)
+					]</xpath>
+				<value>
+					<useMeatFrom>Human</useMeatFrom>
+				</value>
+			</li>
+
+			<!-- Replace alien leather bu human leather(by changing of leatherDef) for every Alien Race. -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/AlienRace.ThingDef_AlienRace/race[
+					contains(thinkTreeMain, "Humanlike") or
+					contains(thinkTreeMain, "AndroidLike")]/leatherDef</xpath>
+				<value>
+					<leatherDef>Leather_Human</leatherDef>
+				</value>
+			</li>
+
+			<!-- Replace Harpy leather bu human leather(by changing of leatherDef). -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/AlienRace.ThingDef_AlienRace/race[contains(thinkTreeMain, "Harpylike")]/leatherDef</xpath>
+				<value>
+					<leatherDef>Leather_Human</leatherDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>		
