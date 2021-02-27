@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Rim of Madness - Arachnophobia (Continued)</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="ROMA_SpiderRaceGiant"]/race/meatLabel
+					</xpath>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="ROMA_SpiderRaceGiant"]/race</xpath>
+					<value>
+						<useMeatFrom>Megaspider</useMeatFrom>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[
+						defName="ROMA_SpiderRaceGiantQueen" or
+						defName="ROMA_SpiderRace"]/race</xpath>
+					<value>
+						<meatLabel>insect meat</meatLabel>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[
+						defName="ROMA_SpiderRaceGiantQueen" or
+						defName="ROMA_SpiderRace"]/race/useMeatFrom
+					</xpath>
+					<value>
+						<useMeatFrom>Megaspider</useMeatFrom>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

@@ -6,6 +6,11 @@
 	<supportedVersions>
 		<li>1.2</li>
 	</supportedVersions>
+	<loadAfter>
+<!-- add "alien races" mods -->
+		<li>spincrus.dinosauria</li>
+		<li>Mlie.RimofMadnessArachnophobia</li>
+	</loadAfter>
 	<description>
 This is a modified and improved version of Owlchemist's "Optimization: Meats" mod, and based on its sources.
 
