@@ -6,7 +6,8 @@
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/AlienRace.ThingDef_AlienRace/race[
 					contains(thinkTreeMain, "Humanlike") or
-					contains(thinkTreeMain, "AndroidLike")]/useMeatFrom</xpath>
+					contains(thinkTreeMain, "AndroidLike") or
+					contains(thinkTreeMain, "MechM7Like")]/useMeatFrom</xpath>
 				<value>
 					<useMeatFrom>Human</useMeatFrom>
 				</value>
@@ -16,7 +17,8 @@
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/AlienRace.ThingDef_AlienRace/race[
 					(contains(thinkTreeMain, "Humanlike") or
-					contains(thinkTreeMain, "AndroidLike"))
+					contains(thinkTreeMain, "AndroidLike") or
+					contains(thinkTreeMain, "MechM7Like"))
 					and not(useMeatFrom)
 					]</xpath>
 				<value>
@@ -38,7 +40,8 @@
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/AlienRace.ThingDef_AlienRace/race[
 					contains(thinkTreeMain, "Humanlike") or
-					contains(thinkTreeMain, "AndroidLike")]/leatherDef</xpath>
+					contains(thinkTreeMain, "AndroidLike") or
+					contains(thinkTreeMain, "MechM7Like")]/leatherDef</xpath>
 				<value>
 					<leatherDef>Leather_Human</leatherDef>
 				</value>
