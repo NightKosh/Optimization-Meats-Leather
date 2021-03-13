@@ -18,18 +18,9 @@
 				<xpath>Defs/AlienRace.ThingDef_AlienRace/race[
 					(contains(thinkTreeMain, "Humanlike") or
 					contains(thinkTreeMain, "AndroidLike") or
-					contains(thinkTreeMain, "MechM7Like"))
+					contains(thinkTreeMain, "MechM7Like") or
+					contains(thinkTreeMain, "Harpylike"))
 					and not(useMeatFrom)
-					]</xpath>
-				<value>
-					<useMeatFrom>Human</useMeatFrom>
-				</value>
-			</li>
-
-			<!-- Replace Harpy meat by human meat(by addition of useMeatFrom change) -->
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/AlienRace.ThingDef_AlienRace/race[
-					contains(thinkTreeMain, "Harpylike") and not(useMeatFrom)
 					]</xpath>
 				<value>
 					<useMeatFrom>Human</useMeatFrom>
@@ -41,15 +32,8 @@
 				<xpath>Defs/AlienRace.ThingDef_AlienRace/race[
 					contains(thinkTreeMain, "Humanlike") or
 					contains(thinkTreeMain, "AndroidLike") or
-					contains(thinkTreeMain, "MechM7Like")]/leatherDef</xpath>
-				<value>
-					<leatherDef>Leather_Human</leatherDef>
-				</value>
-			</li>
-
-			<!-- Replace Harpy leather bu human leather(by changing of leatherDef). -->
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/AlienRace.ThingDef_AlienRace/race[contains(thinkTreeMain, "Harpylike")]/leatherDef</xpath>
+					contains(thinkTreeMain, "MechM7Like") or
+					contains(thinkTreeMain, "Harpylike")]/leatherDef</xpath>
 				<value>
 					<leatherDef>Leather_Human</leatherDef>
 				</value>
